@@ -1,3 +1,3 @@
 [all]
-18.212.210.147
+18.212.210.147 ansible_ssh_user=ec2-user ansible_private_key_file=key
 34.227.111.165

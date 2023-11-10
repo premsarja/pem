@@ -1,8 +1,6 @@
-- name: demo on package nginx
+---
+- name: Check Disk Space
   hosts: all
-  become: yes
-  tasks: 
-     - name: installing nginx
-       ansible.builtin.package:
-         name: nginx
-         state: present 
+  tasks:
+    - name: Run df command
+      command: df -h

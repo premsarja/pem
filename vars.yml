@@ -1,6 +1,6 @@
 ---
 - name: Install Java
-  hosts: java_servers
+  hosts: all
   become: yes  # Run tasks with elevated privileges (sudo)
 
   tasks:

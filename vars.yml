@@ -6,5 +6,5 @@
   tasks:
     - name: Install OpenJDK 8 (Amazon Linux)
       yum:
-        name: java-1.8.0-openjdk
+        name: java
         state: present

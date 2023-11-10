@@ -1,6 +1,10 @@
 ---
-- name: Check Disk Space
-  hosts: all
+- name: Install Java
+  hosts: java_servers
+  become: yes  # Run tasks with elevated privileges (sudo)
+
   tasks:
-    - name: Run df command
-      command: df -h
+    - name: Install OpenJDK 8 (Amazon Linux)
+      yum:
+        name: java-1.8.0-openjdk
+        state: present
